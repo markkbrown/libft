@@ -6,7 +6,7 @@
 /*   By: mbrown <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/01 13:06:35 by mbrown            #+#    #+#             */
-/*   Updated: 2017/12/05 20:26:28 by mbrown           ###   ########.fr       */
+/*   Updated: 2017/12/05 20:29:17 by mbrown           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	destlen = 0;
 	while (dst[destlen] && destlen < size)
 		destlen++;
-	if (size < destlen)
+	if (size == destlen)
 		return (size + ft_strlen(src));
 	while (src[i])
 	{
